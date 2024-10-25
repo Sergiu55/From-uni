@@ -1,0 +1,149 @@
+body{
+    font-family: "Epilogue", sans-serif;
+    margin: auto;
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    height: 78px;
+    background-color: black;
+    color: white;
+    width: auto;
+   
+}
+.intro {
+    display: flex;
+    list-style-type: none;
+    gap: 100px;
+    margin-top:25px ;
+    font-size: 25px;
+}
+
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+    
+
+nav img{
+    height: 78px;
+    position: relative;
+    left: 70px;
+    
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 100px;
+    justify-content: space-around;
+    font-size: 25px;
+    margin-left:40px
+}
+
+
+.header{
+    font-size: 27px;
+    margin: 0 auto;
+    width: 1700px;
+    height: 10px;
+}
+ 
+
+.Text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 35px;
+    display: block;  
+    text-align: center;
+}
+  
+.container {
+    position: absolute;
+    top: 35%;
+    left: 26%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    background-color: gray;
+    width: 200px;
+    height: 50px;
+    border-radius: 100px;
+    cursor: pointer;
+    position: relative;
+}
+ 
+.button::before {
+    position: absolute;
+    content: '';
+    background-color: white;
+    width: 90px;
+    height:40px;
+    border-radius: 200px;
+    margin: 5px;
+    transition: 0.2s;
+
+}
+
+input:checked + .button{
+    background-color: gray;
+}
+
+input:checked + .button::before{
+    transform: translateX(100px);
+}
+
+input {
+    display: none;
+}
+
+.Firstway{
+    list-style-type: none;
+    position: absolute;
+    top: 35%;
+    left: 9%;
+    color:black;
+
+}
+
+.SecoundWay {
+    list-style-type: none;
+    position: absolute;
+    top: 35%;
+    left: 57%;
+    color: black;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+ul li ul.dropdown li{
+    display: block;
+}
+ul li ul.dropdown {
+    width: 100%;
+    background: red;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+ul li a:hover {
+    background-color: blue;
+}
+ul li:hover ul.dropdown {
+    display:block;
+}
