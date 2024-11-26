@@ -1,0 +1,371 @@
+body{
+    font-family: "Epilogue", sans-serif;
+    margin: auto;
+    width: 100%;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    height: 78px;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+.intro {
+    display: flex;
+    list-style-type: none;
+    gap: 100px;
+    margin-top:25px ;
+    font-size: 25px;
+}
+
+a:link, a:visited {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+    
+
+nav img{
+    height: 78px;
+    position: relative;
+    left: 70px;
+    
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 100px;
+    justify-content: space-around;
+    font-size: 25px;
+    margin-left:40px
+}
+
+
+.header{
+    font-size: 27px;
+    margin: auto;
+    width: auto;
+    height: 10px;
+    width: 0px !important;
+    margin: auto;
+}
+
+
+
+.button5 {
+    display: flex;
+    list-style-type: none;
+    gap: 100px;
+    justify-content: space-around;
+    font-size: 25px;
+    margin-left: 40px;
+    padding-top: 25px;
+}
+
+.button5 {
+    background-color: black; 
+    color: white; 
+}
+
+
+.button6 {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    font-size: 25px;
+    margin-left: 0px;
+    padding-bottom: 50px;
+}
+
+.button6 {
+    background-color: black; 
+    color: white; 
+}
+
+nav ul li a:link, a:visited {
+    color: black;
+}
+
+
+.Text1 {
+    position: absolute;
+    bottom: 70%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 60px;
+    display: block;  
+    text-align: center;
+    padding-right: 155px;
+}
+
+  
+.container {
+    position: absolute;
+    top: 35%;
+    margin-left: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    background-color: gainsboro;
+    width: 190px;
+    height: 40px;
+    border-radius: 100px;
+    cursor: pointer;
+    position: relative;
+}
+ 
+.button::before {
+    position: absolute;
+    content: '';
+    background-color: white;
+    width: 79px;
+    height:30px;
+    border-radius: 200px;
+    margin: 5px;
+    transition: 0.2s;
+
+}
+
+input:checked + .button{
+    background-color: gainsboro;
+}
+
+input:checked + .button::before{
+    transform: translateX(100px);
+}
+
+input {
+    display: none;
+}
+
+.Firstway{
+    list-style-type: none;
+    position: absolute;
+    top: 27%;
+    left: 6%;
+    color:black;
+    font-size: 15px;
+
+}
+
+.SecoundWay {
+    list-style-type: none;
+    position: absolute;
+    top: 27%;
+    left: 56%;
+    color: black;
+    font-size: 15px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+ul li ul.dropdown li{
+    display: block;
+}
+
+.container {
+    align-content:space-around;
+}
+
+ul li ul.dropdown {
+    width: 600px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover {
+    background-color: rgb(252, 252, 252);
+    border: 1px solid black;
+    
+}
+ul li:hover ul.dropdown {
+    display:block;
+    display: flex;
+    padding-left: 0px;
+    justify-content: space-around;
+}
+
+.button2 {
+    border: none;
+    text-align: center;
+    text-decoration:  none;
+    display: inline-block;
+    font-size: 25px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button2 {
+    background-color: black; 
+    color: white; 
+}
+  
+.button2:hover {
+    background-color:gray;
+}
+
+.button3 {
+    border: none;
+    color: black 1222;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button3 {
+    background-color:white;
+}
+
+
+input[type="date"]{
+    background-color: white;
+    padding: 15px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:43.1%; 
+    left:35%;
+    font-family: "Roboto Mono",monospace;
+    color: gray;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    display: block;
+    width: 160px;
+}
+
+::webkit-calendar-picker-indicator{
+    background-color: white;
+    padding: 5px;
+    cursor: pointer;
+    border-radius:3px ;
+}
+
+#blocktext {
+    max-width: 760px;
+    padding-top: 20px;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: 4fr 1fr 1fr 1fr;
+    position: relative;
+    margin: auto;
+    right: 10px;
+}
+
+.textforrail{
+    font-size: 14px;
+    padding-left: 10px;
+    height: 80px;
+    display: block;
+    width: 500px;
+    color: #6a6a6a;
+}
+
+
+.textintable {
+    border-radius: 20px 20px 20px 20px; 
+    width: 1000px;
+    height: 80px;
+}
+
+.textintable2 {
+    border: 1px solid gray !important;
+    border-radius: 20px 20px 20px 20px; 
+    padding-left: 13px;
+    width: 85px;
+    height: 80px;
+}
+
+.textintable3 {
+    border: 1px solid gray !important;
+    border-radius: 20px 20px 20px 20px; 
+    padding-left: 13px;
+    width: 85px;
+    height: 80px;
+}
+
+.textintable4 {
+    border: 1px solid gray !important;
+    border-radius: 20px 20px 20px 20px; 
+    padding-left: 13px;
+    width: 85px;
+    margin-right: 150px;
+    height: 80px;
+}
+
+
+
+h4 {
+    font-size: 10px;
+}
+
+.boxContainer {
+    top:40.6%; 
+    left:40%;
+    position:absolute;
+    width:500px;
+    height: 42px;
+    border: 4px solid white;
+    padding:0px 10px;
+    border-radius: 50px;
+    background-color: white;
+    
+}
+
+.elementsContainer {
+    width: 100%;
+    height: 100%;
+    vertical-align:middle;
+    padding-right: 10px;
+}
+
+.search {
+    border:none;
+    top: 27%;
+    left: 6%;
+    padding: 0px 5px;
+    border-radius:50px;
+    font-size: 40px;
+    font-family: "Nunito";
+    font-weight: 500;
+}
+
+.search:focus {
+    outline:none;
+}
+
+.material-icons {
+    font-size: 26;
+    color: #2980b9;
+}
+
+td a:link, a:visited {
+    color: gray;
+    padding-bottom: 10px;
+}
+
+.Portimg {
+    top:100px;
+}
+
